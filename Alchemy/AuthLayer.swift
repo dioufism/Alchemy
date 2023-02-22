@@ -62,7 +62,7 @@ public class AuthLayer: AuthProtocol {
         /// check for password
         guard self.password.lowercased() == samplePassword else {
             self.invalidCredentials = true
-            return
+            return 
         }
         
         authDelegate?.isAuthenticated()
